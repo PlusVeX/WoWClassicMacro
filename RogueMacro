@@ -1,3 +1,5 @@
+! BATTLE MACRO
+
 ~ BLIND - casts blind on next mouseover target without dropping current target
 #showtooltip Blind
 /stopcasting
@@ -13,6 +15,57 @@
 /cast Premeditation
 /cast Cheap Shot
 
+~ Same as above, cs for garrote
+#show Garrote
+/cast Premeditation
+/cast Garrote
 
+~ Sap - Sap wont auto-target like CS. This will. No more having to spam tab + sap
+#show sap
+/cleartarget
+/targetenemy
+/cast sap
+
+~ COOL DOWNS - 1 button to cast everything in your arsenal if you wish. You can break this macro up to pair up any CD’s you wish, including trinkets(top trinket is 13, bottom is 14).
+#show Sprint
+/cast Sprint
+/cast Evasion
+/cast Berserking
+/cast Adrenaline Rush
+/cast Blade Flurry
+/cast Preparation
+/use 13
+/use 14
+/startattack
+
+~ Example of above:
+For example, I use this macro after my opener for quick pressure
+#show Berserking
+/use 14
+/cast Berserking
+This casts my bloodlust broach (278 AP 20 secs) followed by my racial Berserking (attack speed increased by 10&#37;-30%)
 
 via - https://us.forums.blizzard.com/en/wow/t/rogues-here-are-some-nice-macros-to-keep-an-eye-on-for-classic/178642
+
+~ CoS removes DoTs, then vanish - REMOVES DoTs
+#showicon Vanish
+/cast Cloak of Shadows
+/cast Vanish
+
+
+! USEFUL MACRO
+
+~ Eat while stealthed
+#showtooltip *food here*
+/cast *food here*
+/cast Stealth
+
+~ One Button Poisons - This will apply Deadly Poison to your weapon with a left mouse click, and Crippling Poison with a right click.
+#showtooltip 
+/use [btn:1] Deadly Poison; [btn:2] Crippling Poison
+
+
+
+
+
+
