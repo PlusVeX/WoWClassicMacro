@@ -1,6 +1,0 @@
-#BLIND - casts blind on next mouseover target without dropping current target
-
-/stopcasting
-/cast [target=mouseover,exists] Blind
-
-#
