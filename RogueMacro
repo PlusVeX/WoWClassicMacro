@@ -1,0 +1,18 @@
+~ BLIND - casts blind on next mouseover target without dropping current target
+#showtooltip Blind
+/stopcasting
+/cast [target=mouseover,exists] Blind
+
+~ Vanish - stops autoattack removing you from vanish.
+#show Vanish
+/cast Vanish
+/stopattack
+
+~ Casts Premed followed by Cheap Shot with one button press. If Premed is on CD it will still cast Cheap Shot.
+#show Cheap Shot
+/cast Premeditation
+/cast Cheap Shot
+
+
+
+via - https://us.forums.blizzard.com/en/wow/t/rogues-here-are-some-nice-macros-to-keep-an-eye-on-for-classic/178642
